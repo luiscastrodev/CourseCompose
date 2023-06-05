@@ -2,4 +2,5 @@
     <string name="app_name">MeuPrimeiroProjetoCompose</string>
     <string name="title_activity_modifier">ModifierActivity</string>
     <string name="title_activity_image_card">ImageCardActivity</string>
+    <string name="title_activity_styling_text">StylingTextActivity</string>
 </resources>

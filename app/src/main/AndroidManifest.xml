@@ -13,7 +13,12 @@
         android:theme="@style/Theme.MeuPrimeiroProjetoCompose"
         tools:targetApi="31">
         <activity
-            android:name=".ImageCardActivity"
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_styling_text"
+            android:theme="@style/Theme.MeuPrimeiroProjetoCompose" />
+        <activity
+            android:name=".StylingTextActivity"
             android:exported="true"
             android:label="@string/title_activity_image_card"
             android:theme="@style/Theme.MeuPrimeiroProjetoCompose">
@@ -24,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ImageCardActivity"
             android:exported="false"
             android:label="@string/title_activity_modifier"
             android:theme="@style/Theme.MeuPrimeiroProjetoCompose" />
@@ -33,11 +38,6 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MeuPrimeiroProjetoCompose">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
