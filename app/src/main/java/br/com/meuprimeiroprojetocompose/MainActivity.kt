@@ -6,6 +6,8 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -66,14 +68,17 @@ class MainActivity : ComponentActivity() {
     }
 
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-    @OptIn(ExperimentalMaterial3Api::class)
     @Preview(showBackground = true)
     @Composable
     fun MyComposeFunction() {
         Column(
             modifier = Modifier
                 .fillMaxHeight()
-                .fillMaxHeight(),
+                .fillMaxHeight()
+                .fillMaxSize()
+                .background(Color.Gray),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceBetween
         ) {
             Surface(
                 color = Color.Red, modifier = Modifier
@@ -91,48 +96,12 @@ class MainActivity : ComponentActivity() {
             ) {
 
             }
-            Surface(
-                color = Color.Magenta, modifier = Modifier
-                    .width(100.dp)
-                    .height(100.dp)
-            ) {
-                Box {
 
-                    Column() {
-
-                        Row() {
-                            Text(text = "1")
-                            Text(text = "1")
-                            Text(text = "1")
-                        }
-                        Spacer(modifier = Modifier.height(100.dp))
-                        Image(
-                            painter = painterResource(id = R.drawable.icon),
-                            contentDescription = "Image 1"
-                        )
-                    }
-                    Text(
-                        text = "2050",
-                        fontSize = 20.sp,
-                        color = Color.White,
-                        modifier = Modifier
-                            .align(Alignment.BottomEnd)
-                            .padding(8.dp),
-                    )
-                }
+            Row() {
+                Text(text = "1")
+                Text(text = "2")
+                Text(text = "3")
             }
         }
-        /*Scaffold(
-            topBar = {
-                TopAppBar(
-                    title = { Text(text = "Projeto Novo") },
-                    navigationIcon = {
-                        IconButton(onClick = { showMessage() }) {
-                            Icon(Icons.Filled.Menu, contentDescription = "Menu")
-                        }
-                    }
-                )
-            },
-        ) {}*/
     }
 }
