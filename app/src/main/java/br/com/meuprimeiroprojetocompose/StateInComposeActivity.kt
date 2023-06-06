@@ -27,8 +27,8 @@ class StateInComposeActivity : ComponentActivity() {
                     Modifier
                         .weight(1f)
                         .fillMaxSize()
-                ){
-                    color.value = it
+                ) { newColor ->
+                    color.value = newColor
                 }
                 Box(
                     modifier = Modifier
