@@ -6,4 +6,5 @@
     <string name="title_activity_state_in_compose">StateInComposeActivity</string>
     <string name="title_activity_text_fields_buttons">TextFieldsButtonsActivity</string>
     <string name="title_activity_constraint_layout_compose">ConstraintLayoutComposeActivity</string>
+    <string name="title_activity_custom_progress">CustomProgressActivity</string>
 </resources>
